@@ -85,7 +85,7 @@ function App() {
     <main className='App'>
       <div className='juego-terminado'>
         <span>Obtuviste {puntuacion} de {trivia.length}</span>
-        <button onClick={() => window.location.href='/'}>Volver a jugar</button>
+        <button onClick={() => window.location.href='https://cesarsuarezwd.github.io/trivia/'}>Volver a jugar</button>
         <button onClick={() => {
           setIsFinished(false);
           setAnswersShown(true);
@@ -112,7 +112,7 @@ function App() {
           </div>
           <button onClick={() => {
             if(preguntaActual === trivia.length - 1){
-              window.location.href='/';
+              window.location.href='https://cesarsuarezwd.github.io/trivia/';
             } else {
               setPreguntaActual(preguntaActual + 1);
             }
